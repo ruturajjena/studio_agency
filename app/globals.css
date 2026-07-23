@@ -1,0 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ────────────────────────────────────────────────────────────────────────────
+   STUDIO — GLOBAL STYLE FOUNDATION
+   Colours come in as CSS variables from <ThemeStyle/> (hydrated from theme.ts).
+   Typography is bespoke: a fluid clamp() scale, NOT Tailwind's defaults.
+──────────────────────────────────────────────────────────────────────────── */
+
+:root {
+  /* Colour vars are injected inline by ThemeStyle; these are safe fallbacks. */
+  --color-bg: #0b0b0d;
+  --color-surface: #141417;
+  --color-text: #edebe7;
+  --color-muted: #6e6e73;
+  --color-line: #26262a;
+  --color-accent: #c8ff3d;
+  --color-accent-ink: #0b0b0d;
+
+  /* Bespoke fluid display scale — headlines meant to dominate the viewport. */
+  --display-3xl: clamp(4rem, 20vw, 22rem); /* hero / contact monsters */
+  --display-2xl: clamp(3.2rem, 14vw, 15rem);
+  --display-xl: clamp(2.6rem, 9vw, 9rem);
+  --display-lg: clamp(2rem, 6vw, 5rem);
+  --display-md: clamp(1.5rem, 3.4vw, 3rem);
+
+  --text-lg: clamp(1.1rem, 1.6vw, 1.5rem);
+  --text-base: clamp(0.95rem, 1.1vw, 1.05rem);
+  --text-sm: 0.82rem;
+  --text-xs: 0.7rem;
+
+  --ease-studio: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Editorial spacing rhythm. */
+  --gutter: clamp(1.25rem, 5vw, 6rem);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  font-size: var(--text-base);
+  line-height: 1.5;
+  overflow-x: hidden;
+  /* Native cursor hidden only when the custom cursor is active (see .has-cursor). */
+}
+
+/* Lenis smooth-scroll requirements. */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* ── Typography utilities (bespoke) ──────────────────────────────────────── */
+.font-display {
+  font-family: var(--font-display), var(--font-sans), sans-serif;
+}
+
+.display-3xl,
+.display-2xl,
+.display-xl,
+.display-lg,
+.display-md {
+  font-family: var(--font-display), var(--font-sans), sans-serif;
+  font-weight: 600;
+  line-height: 0.86;
+  letter-spacing: -0.03em;
+  text-transform: none;
+  margin: 0;
+}
+.display-3xl { font-size: var(--display-3xl); letter-spacing: -0.045em; }
+.display-2xl { font-size: var(--display-2xl); letter-spacing: -0.04em; }
+.display-xl  { font-size: var(--display-xl); }
+.display-lg  { font-size: var(--display-lg); line-height: 0.95; }
+.display-md  { font-size: var(--display-md); line-height: 1; letter-spacing: -0.02em; }
+
+.eyebrow {
+  font-size: var(--text-xs);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  font-weight: 500;
+}
+
+.text-lead {
+  font-size: var(--text-lg);
+  line-height: 1.45;
+  letter-spacing: -0.01em;
+}
+
+/* Thin editorial rule. */
+.rule {
+  height: 1px;
+  width: 100%;
+  background: var(--color-line);
+  border: 0;
+}
+
+/* ── Line-mask reveal primitive (used by kinetic type) ───────────────────── */
+.line-mask {
+  display: block;
+  overflow: hidden;
+}
+
+/* ── Accent selection ────────────────────────────────────────────────────── */
+::selection {
+  background: var(--color-accent);
+  color: var(--color-accent-ink);
+}
+
+/* Hide native cursor when the custom cursor is running (desktop, motion-ok). */
+.has-cursor,
+.has-cursor * {
+  cursor: none !important;
+}
+
+/* Utility: element the magnetic/cursor system can query. */
+[data-cursor] {
+  position: relative;
+}
+
+/* Thin scrollbar off — Lenis owns scrolling. */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* ── Reduced motion: strip the theatrical stuff, keep it dignified ───────── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .has-cursor,
+  .has-cursor * {
+    cursor: auto !important;
+  }
+}
