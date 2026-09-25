@@ -3,7 +3,7 @@ export default {
   id: "20",
   name: "Aurora Lake",
   blurb: "Curtains of aurora ripple above a still mountain lake that mirrors them. Your cursor pushes the light.",
-  bloom: { strength: 0.75, radius: 0.6, threshold: 0.7 },
+  bloom: { strength: 0.7, radius: 0.6, threshold: 0.75 },
   exposure: 1.0,
   background: "#020510",
 
@@ -45,15 +45,15 @@ export default {
             float pt = (0.8 + pow(fi, 1.4) * 0.002) / (rd.y * 2.0 + 0.4) - 0.006 * jit * smoothstep(0.0, 15.0, fi);
             vec2 p = (pt * rd).zx + vec2(uTime * 0.03, 0.0) + uPtr;
             float n = curtain(p);
-            vec3 c = mix(vec3(0.3, 1.0, 1.15), vec3(0.35, 0.5, 1.2), smoothstep(0.0, 18.0, fi));
+            vec3 c = mix(vec3(0.45, 1.0, 1.15), vec3(0.4, 0.55, 1.2), smoothstep(4.0, 22.0, fi));
             c = mix(c, vec3(0.6, 0.4, 1.2), smoothstep(18.0, 35.0, fi));
             avg = mix(avg, c * n, 0.5);
             col += avg * exp2(-fi * 0.065 - 2.5) * smoothstep(0.0, 5.0, fi);
           }
-          return col * clamp(rd.y * 15.0 + 0.4, 0.0, 1.0) * 2.0;
+          return col * clamp(rd.y * 15.0 + 0.4, 0.0, 1.0) * smoothstep(0.85, 0.2, rd.y) * 1.9;
         }
         float ridge(float az){
-          return 0.03 + 0.022 * sin(az * 3.1 + 1.3) + 0.014 * sin(az * 7.3 + 0.4) + 0.006 * sin(az * 17.0) + 0.003 * sin(az * 41.0);
+          return 0.04 + 0.03 * sin(az * 3.1 + 1.3) + 0.014 * sin(az * 7.3 + 0.4) + 0.006 * sin(az * 17.0) + 0.003 * sin(az * 41.0);
         }
         vec3 sky(vec3 rd){
           vec3 col = mix(vec3(0.02, 0.04, 0.1), vec3(0.003, 0.006, 0.02), smoothstep(0.0, 0.5, rd.y));
@@ -88,8 +88,9 @@ export default {
             col = col * fres + vec3(0.002, 0.004, 0.01);
             col += vec3(0.1, 0.18, 0.4) * exp(rd.y * 90.0) * 0.25;
           }
-          col += vec3(0.05, 0.1, 0.25) * exp(-abs(rd.y) * 45.0) * 0.4;
-          gl_FragColor = vec4(col, 1.0);
+          col += vec3(0.08, 0.14, 0.3) * exp(-abs(rd.y) * 45.0) * 0.5;
+          // Colours above are authored in display space; convert to linear for the tone-mapped pipeline.
+          gl_FragColor = vec4(pow(max(col, 0.0), vec3(2.2)) * 1.15, 1.0);
         }`,
     });
     const quad = new THREE.Mesh(new THREE.PlaneGeometry(2, 2), mat);

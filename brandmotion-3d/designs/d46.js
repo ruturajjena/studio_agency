@@ -110,7 +110,6 @@ export default {
     const plane = new THREE.Plane(new THREE.Vector3(0, 0, 1), 0), ray = new THREE.Raycaster(), hit = new THREE.Vector3();
     const HOLD = 3.2, MORPH = 2.4, CYCLE = HOLD + MORPH;
     return (t) => {
-      t += T0;
       uniforms.uTime.value = t;
       uniforms.uPx.value = window.devicePixelRatio > 1 ? 1.3 : 1;
       const k = Math.floor(t / CYCLE), ph = t % CYCLE;

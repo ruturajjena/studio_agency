@@ -47,7 +47,7 @@ export default {
     const geo = new RoundedBoxGeometry(1.7, 0.085, 1.7, 3, 0.04);
     const mat = new THREE.MeshPhysicalMaterial({ color: 0xffffff, metalness: 1, roughness: 0.18, clearcoat: 1, clearcoatRoughness: 0.06, envMapIntensity: 1.1 });
     const tower = new THREE.InstancedMesh(geo, mat, N);
-    const c = new THREE.Color(), deep = new THREE.Color("#0c1a3c"), mid = new THREE.Color(palette.blue), hi = new THREE.Color(palette.ice);
+    const c = new THREE.Color(), deep = new THREE.Color("#22386b"), mid = new THREE.Color(palette.horizon), hi = new THREE.Color(palette.ice);
     for (let i = 0; i < N; i++) {
       const k = i / (N - 1);
       c.copy(deep).lerp(mid, Math.pow(k, 1.4)).lerp(hi, Math.pow(k, 6) * 0.7);

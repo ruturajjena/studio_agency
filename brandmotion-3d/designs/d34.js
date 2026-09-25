@@ -71,7 +71,7 @@ export default {
     const plinth = new THREE.Mesh(new THREE.BoxGeometry(COUNT * GAP + 0.9, 0.36, 1.5), new THREE.MeshPhysicalMaterial({ color: 0x070c18, metalness: 0.6, roughness: 0.25, clearcoat: 1 }));
     plinth.position.y = BASE - 0.18;
     scene.add(plinth);
-    const seam = new THREE.Mesh(new THREE.BoxGeometry(COUNT * GAP + 0.92, 0.012, 1.52), new THREE.MeshBasicMaterial({ color: new THREE.Color(0.9, 1.2, 2.0), toneMapped: false }));
+    const seam = new THREE.Mesh(new THREE.BoxGeometry(COUNT * GAP + 0.92, 0.012, 1.52), new THREE.MeshBasicMaterial({ color: new THREE.Color(0.45, 0.65, 1.2), toneMapped: false }));
     seam.position.y = BASE - 0.02;
     scene.add(seam);
     // Base discs under each coil.
@@ -81,7 +81,7 @@ export default {
       scene.add(d);
     }
 
-    const floor = new THREE.Mesh(new THREE.CircleGeometry(60, 64), new THREE.MeshStandardMaterial({ color: 0x010207, metalness: 0.9, roughness: 0.4, envMapIntensity: 0.1 }));
+    const floor = new THREE.Mesh(new THREE.CircleGeometry(60, 64), new THREE.MeshBasicMaterial({ color: 0x02040b }));
     floor.rotation.x = -Math.PI / 2;
     floor.position.y = BASE - 0.36;
     scene.add(floor);
@@ -97,7 +97,7 @@ export default {
     const backdrop = new THREE.Mesh(new THREE.PlaneGeometry(40, 20), new THREE.ShaderMaterial({
       depthWrite: false,
       vertexShader: "varying vec2 vUv; void main(){ vUv = uv; gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0); }",
-      fragmentShader: "varying vec2 vUv; void main(){ vec2 p = (vUv - vec2(0.5, 0.42)) * vec2(2.0, 1.0); float g = exp(-dot(p, p) * 7.0); gl_FragColor = vec4(mix(vec3(0.0012, 0.0028, 0.007), vec3(0.018, 0.035, 0.09), g), 1.0); }",
+      fragmentShader: "varying vec2 vUv; void main(){ vec2 p = (vUv - vec2(0.5, 0.56)) * vec2(2.0, 1.2); float g = exp(-dot(p, p) * 8.0) * smoothstep(0.4, 0.56, vUv.y); gl_FragColor = vec4(mix(vec3(0.0012, 0.0028, 0.007), vec3(0.018, 0.035, 0.09), g), 1.0); }",
     }));
     backdrop.position.set(0, 2, -12);
     scene.add(backdrop);
