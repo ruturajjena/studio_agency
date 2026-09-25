@@ -21,12 +21,12 @@ export default {
     mirror.position.y = 2 * FLOOR;
     for (let i = 0; i < N; i++) {
       const f = i / (N - 1);
-      const col = f < 0.5 ? cyan.clone().lerp(glow, Math.min(1, f * 2.6)) : glow.clone().lerp(violet, Math.max(0, (f - 0.6) * 1.9));
+      const col = f < 0.5 ? cyan.clone().lerp(glow, Math.min(1, f * 2.6)) : glow.clone().lerp(violet, Math.max(0, (f - 0.55) * 1.4));
       const w = (2 * Math.PI * (K + i)) / CYCLE;
       const len = L0 * Math.pow(K / (K + i), 2) * 0.7 + L0 * 0.3;
       const x = (f - 0.5) * 8.4;
-      const m = new THREE.Mesh(bobGeo, new THREE.MeshBasicMaterial({ color: col.clone().multiplyScalar(2.2), toneMapped: false }));
-      const mm = new THREE.Mesh(bobGeo, new THREE.MeshBasicMaterial({ color: col.clone().multiplyScalar(0.28), toneMapped: false }));
+      const m = new THREE.Mesh(bobGeo, new THREE.MeshBasicMaterial({ color: col.clone().multiplyScalar(2.2 + Math.max(0, f - 0.5) * 3), toneMapped: false }));
+      const mm = new THREE.Mesh(bobGeo, new THREE.MeshBasicMaterial({ color: col.clone().multiplyScalar(0.18), toneMapped: false }));
       bobs.add(m); mirror.add(mm);
       pend.push({ w, len, x, col, m, mm, hist: [], pos: new THREE.Vector3() });
     }

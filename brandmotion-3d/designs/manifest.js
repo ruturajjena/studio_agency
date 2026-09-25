@@ -54,5 +54,55 @@ export default [
     "id": "11",
     "name": "Tesseract",
     "blurb": "A hypercube rotating through the fourth dimension, projected into ours. Your cursor sets the speed and plane of its turn."
+  },
+  {
+    "id": "22",
+    "name": "Shattered Mirror",
+    "blurb": "A mirror full of night sky that fractures and heals. Shards scatter from your cursor."
+  },
+  {
+    "id": "23",
+    "name": "Pendulum Wave",
+    "blurb": "Eighteen glowing pendulums slipping in and out of phase. Move to swing the camera around them."
+  },
+  {
+    "id": "24",
+    "name": "Möbius Band",
+    "blurb": "A lacquered Möbius strip where light runs its single endless surface. Your cursor turns it."
+  },
+  {
+    "id": "25",
+    "name": "Knot Current",
+    "blurb": "Energy races through a smoked-glass knot. The further your cursor strays, the faster it flows."
+  },
+  {
+    "id": "26",
+    "name": "Night City",
+    "blurb": "A rain-streaked skyline gliding past in the dark. Your cursor steers the fly-over."
+  },
+  {
+    "id": "27",
+    "name": "Lighthouse",
+    "blurb": "A lighthouse sweeping its beam through sea fog. Point, and the light turns to find you."
+  },
+  {
+    "id": "28",
+    "name": "Signal Flag",
+    "blurb": "A silk banner rippling in the night wind. Your cursor is a gust that billows the cloth."
+  },
+  {
+    "id": "29",
+    "name": "Radial Spectrum",
+    "blurb": "A circular equaliser pumping to a silent beat on black glass. Bars rise to meet your cursor."
+  },
+  {
+    "id": "30",
+    "name": "Constellations",
+    "blurb": "A deep field of stars. Wherever you point, nearby stars reach for each other and draw a constellation."
+  },
+  {
+    "id": "31",
+    "name": "Iridescent Bubbles",
+    "blurb": "Blue-violet soap bubbles drifting in the dark. Sweep your cursor to blow them away."
   }
 ];

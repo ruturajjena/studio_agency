@@ -10,7 +10,7 @@ export default {
   exposure: 1.0,
 
   setup({ THREE, scene, camera, sky, pointer, palette, track }) {
-    sky({ top: "#02050d", mid: "#08132b", horizon: "#1b3264", haze: 0.15 });
+    sky({ top: "#02050d", mid: "#08132b", horizon: "#16284f", haze: 0.15 });
     const N = 96, RAD = 2.6;
     const glow = new THREE.Color(palette.glow), ice = new THREE.Color(palette.ice), cyan = new THREE.Color(palette.cyan), violet = new THREE.Color(palette.violet);
 
@@ -36,21 +36,22 @@ export default {
     scene.add(pulse);
 
     // Mirror floor + dark glaze on top for a glossy falloff.
-    const mirror = new Reflector(new THREE.CircleGeometry(120, 64), {
+    const mirror = new Reflector(new THREE.CircleGeometry(120, 160), {
       textureWidth: 1024, textureHeight: 1024, color: 0x4a5266, multisample: 0,
     });
     mirror.rotation.x = -Math.PI / 2;
     scene.add(mirror);
     track({ dispose: () => mirror.dispose() });
     const glaze = new THREE.Mesh(
-      new THREE.CircleGeometry(120, 64),
+      new THREE.CircleGeometry(120, 160),
       new THREE.ShaderMaterial({
         transparent: true, depthWrite: false,
         vertexShader: `varying vec3 vW; void main(){ vec4 w=modelMatrix*vec4(position,1.0); vW=w.xyz; gl_Position=projectionMatrix*viewMatrix*w; }`,
         fragmentShader: `varying vec3 vW; void main(){ float r=length(vW.xz);
           float lines = smoothstep(0.02, 0.0, abs(fract(r*0.5)-0.5)*2.0 - 0.98) * exp(-r*0.18) * 0.08;
           float a = mix(0.62, 1.0, smoothstep(3.0, 14.0, r));
-          gl_FragColor = vec4(vec3(0.005,0.01,0.024) + vec3(0.3,0.45,0.8)*lines, a); }`,
+          vec3 c = mix(vec3(0.005,0.01,0.024), vec3(0.009,0.024,0.09), smoothstep(15.0, 100.0, r));
+          gl_FragColor = vec4(c + vec3(0.3,0.45,0.8)*lines, a); }`,
       })
     );
     glaze.rotation.x = -Math.PI / 2;
