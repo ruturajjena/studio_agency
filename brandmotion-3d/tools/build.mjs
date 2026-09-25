@@ -2,6 +2,7 @@
  * Regenerate designs/manifest.js from the dNN.js modules.
  *   node brandmotion-3d/tools/build.mjs
  */
+process.removeAllListeners("warning");
 import fs from "node:fs";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
