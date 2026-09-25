@@ -56,6 +56,56 @@ export default [
     "blurb": "A hypercube rotating through the fourth dimension, projected into ours. Your cursor sets the speed and plane of its turn."
   },
   {
+    "id": "12",
+    "name": "Ferrofluid",
+    "blurb": "A bead of black magnetic liquid. Your cursor is the magnet — spikes rise wherever it points."
+  },
+  {
+    "id": "13",
+    "name": "Warp Tunnel",
+    "blurb": "A light-speed run through rings and streaks. Steer the tunnel's curve with your cursor."
+  },
+  {
+    "id": "14",
+    "name": "Floating Isles",
+    "blurb": "Faceted islands drift in a night void, pouring waterfalls of light. Move to shift the parallax."
+  },
+  {
+    "id": "15",
+    "name": "Liquid Metaballs",
+    "blurb": "Raymarched droplets of liquid chrome merge and split. One of them follows your cursor."
+  },
+  {
+    "id": "16",
+    "name": "Neural Net",
+    "blurb": "A living network of neurons firing pulses along their synapses. Nodes near your cursor light up and cascade."
+  },
+  {
+    "id": "17",
+    "name": "Origami Crane",
+    "blurb": "A paper crane of flat folds and glowing creases, gliding in moonlight. It turns to follow your cursor."
+  },
+  {
+    "id": "18",
+    "name": "Voxel Wave",
+    "blurb": "A field of cubes rides crossing waves, crests lit like glass. Your cursor adds a new wave source."
+  },
+  {
+    "id": "19",
+    "name": "Event Horizon",
+    "blurb": "A black hole wrapped in a lensed accretion disk of white-blue fire. Move to orbit the view."
+  },
+  {
+    "id": "20",
+    "name": "Aurora Lake",
+    "blurb": "Curtains of aurora ripple above a still mountain lake that mirrors them. Your cursor pushes the light."
+  },
+  {
+    "id": "21",
+    "name": "Double Helix",
+    "blurb": "A glowing DNA double helix, turning slowly as data streams up its spine. Your cursor winds and tilts it."
+  },
+  {
     "id": "22",
     "name": "Shattered Mirror",
     "blurb": "A mirror full of night sky that fractures and heals. Shards scatter from your cursor."
@@ -104,6 +154,56 @@ export default [
     "id": "31",
     "name": "Iridescent Bubbles",
     "blurb": "Blue-violet soap bubbles drifting in the dark. Sweep your cursor to blow them away."
+  },
+  {
+    "id": "32",
+    "name": "Ice Spires",
+    "blurb": "Crystal spires burst through a frozen lake. Spires near your cursor kindle with frost light."
+  },
+  {
+    "id": "33",
+    "name": "Holo Globe",
+    "blurb": "A dotted holographic globe traced by flight arcs between glowing cities. Move to spin it."
+  },
+  {
+    "id": "34",
+    "name": "Coil Springs",
+    "blurb": "Chrome coils pulse in a travelling rhythm on a black plinth. Hover to press down the nearest spring."
+  },
+  {
+    "id": "35",
+    "name": "Card Cascade",
+    "blurb": "A deck of glass portfolio cards cascading through a slow shuffle. Move the cursor to fan them out."
+  },
+  {
+    "id": "36",
+    "name": "Smoke Column",
+    "blurb": "A column of luminous smoke curls up from a glowing vent. The plume bends toward your cursor."
+  },
+  {
+    "id": "37",
+    "name": "Geodesic Lattice",
+    "blurb": "A geodesic sphere whose struts carry travelling pulses of light. Nodes near your cursor ignite."
+  },
+  {
+    "id": "38",
+    "name": "Portal Arch",
+    "blurb": "A monolithic stone arch frames a swirling vortex of light. The vortex's eye drifts with your cursor."
+  },
+  {
+    "id": "39",
+    "name": "Ringed World",
+    "blurb": "A banded giant wrapped in thin particle rings, moons in slow orbit. Move to orbit the camera around it."
+  },
+  {
+    "id": "40",
+    "name": "Droplet Pool",
+    "blurb": "Drops fall into a still black pool and spread rings of reflected light. Your cursor picks where they land."
+  },
+  {
+    "id": "41",
+    "name": "Cube Cipher",
+    "blurb": "A cube of dark glass cubies solving itself layer by layer, light bleeding from its seams. Move to tilt it."
   },
   {
     "id": "42",

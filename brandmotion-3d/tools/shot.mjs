@@ -35,7 +35,7 @@ for (const id of ids) {
     r.fulfill({ path: path.join(root, "node_modules/three", rel), contentType: "text/javascript" });
   });
   await page.route("https://fonts.googleapis.com/**", (r) => r.fulfill({ body: "", contentType: "text/css" }));
-  await page.goto(`http://localhost:${port}/brandmotion-3d/designs/view.html#${id}`);
+  await page.goto(`http://localhost:${port}/brandmotion-3d/designs/index.html#${id}`);
   await page.waitForTimeout(opts.wait);
   await page.screenshot({ path: path.join(outDir, `d${id}.png`) });
   if (process.env.HOVER) {
