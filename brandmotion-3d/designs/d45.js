@@ -3,8 +3,8 @@ export default {
   id: "45",
   name: "Kaleido Tunnel",
   blurb: "A kaleidoscopic tunnel of mirrored crystal. Your cursor turns the prism and changes its symmetry.",
-  bloom: { strength: 0.9, radius: 0.55, threshold: 0.65 },
-  exposure: 1.0,
+  bloom: { strength: 0.55, radius: 0.5, threshold: 0.85 },
+  exposure: 0.85,
 
   setup({ THREE, scene, pointer, size, onResize, renderer, composer }) {
     const pr = Math.min(window.devicePixelRatio, 1);
@@ -104,10 +104,10 @@ export default {
               vec3 a = abs(local);
               float edge = smoothstep(0.035, 0.0, min(a.x, min(a.y, a.z)));
               col = mix(vec3(0.015, 0.035, 0.1), vec3(0.08, 0.18, 0.45), head) * (0.25 + dif);
-              col += accent * (fr * 0.45 + edge * (0.7 + 0.8 * pulse));
+              col += accent * (fr * 0.2 + edge * (0.4 + 0.6 * pulse));
               col += vec3(0.8, 0.9, 1.3) * spec * 1.2;
             } else if (matId > 1.5){
-              col = accent * 0.9 * (0.3 + 0.7 * pulse);                        // lit beams
+              col = accent * 0.55 * (0.25 + 0.75 * pulse);                        // lit beams
             } else {
               // wall: near-black tiles with etched rings and mirror seams
               col = vec3(0.01, 0.02, 0.055) * (0.4 + dif) + vec3(0.1, 0.18, 0.4) * spec * 0.4;

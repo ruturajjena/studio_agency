@@ -104,5 +104,50 @@ export default [
     "id": "31",
     "name": "Iridescent Bubbles",
     "blurb": "Blue-violet soap bubbles drifting in the dark. Sweep your cursor to blow them away."
+  },
+  {
+    "id": "42",
+    "name": "Fiber Bloom",
+    "blurb": "Thousands of fibre-optic strands with glowing tips. Your cursor blows through them like wind."
+  },
+  {
+    "id": "43",
+    "name": "Mandelbulb",
+    "blurb": "A living 3D fractal, morphing as it breathes. Move your cursor to orbit around it."
+  },
+  {
+    "id": "44",
+    "name": "Sky Lanterns",
+    "blurb": "Paper lanterns rise over dark water. Your cursor releases new ones and nudges them aside."
+  },
+  {
+    "id": "45",
+    "name": "Kaleido Tunnel",
+    "blurb": "A kaleidoscopic tunnel of mirrored crystal. Your cursor turns the prism and changes its symmetry."
+  },
+  {
+    "id": "46",
+    "name": "Shape Shifter",
+    "blurb": "Fifteen thousand particles flowing between forms. Your cursor scatters the ones nearby."
+  },
+  {
+    "id": "47",
+    "name": "Light Maze",
+    "blurb": "A beam of light solves a dark labyrinth, then a new one rises. Your cursor tilts the maze."
+  },
+  {
+    "id": "48",
+    "name": "Plasma Orb",
+    "blurb": "A glass plasma ball crackling with lightning. One tendril reaches for your cursor."
+  },
+  {
+    "id": "49",
+    "name": "Twist Tower",
+    "blurb": "A breathing tower of glossy stacked plates. Move your cursor sideways to wind or unwind the twist."
+  },
+  {
+    "id": "50",
+    "name": "Glow Reef",
+    "blurb": "A bioluminescent reef of branching coral and drifting plankton. Coral near your cursor glows brighter."
   }
 ];
