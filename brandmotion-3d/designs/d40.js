@@ -31,7 +31,7 @@ export default {
         vec3 col = mix(vec3(0.002, 0.004, 0.012), vec3(0.01, 0.02, 0.06), smoothstep(-0.1, 0.4, R.y));
         vec3 ax = normalize(vec3(0.0, 0.335, -0.94));
         float ca = dot(R, ax);
-        col += vec3(1.4, 1.7, 2.6) * exp(-pow((ca - 0.9955) * 800.0, 2.0)) * 2.0;
+        col += vec3(1.4, 1.7, 2.6) * exp(-pow((ca - 0.9955) * 900.0, 2.0)) * 1.5;
         col += vec3(0.4, 0.6, 1.3) * exp(-(1.0 - ca) * 90.0) * 0.25;
         col += vec3(0.25, 0.4, 0.9) * exp(-pow(R.y - 0.05, 2.0) * 1500.0) * smoothstep(0.9, 0.0, abs(R.x)) * 0.5;
         col += vec3(0.4, 0.3, 1.0) * exp(-pow(dot(R, normalize(vec3(-0.8, 0.3, -0.5))) - 0.995, 2.0) * 9000.0) * 0.8;

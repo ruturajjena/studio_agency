@@ -200,8 +200,8 @@ export default {
         s.glow += (target - s.glow) * Math.min(dt * 6, 1);
         aGlow.array[i] = s.glow + 0.08 * Math.sin(t * 1.3 + i);
         q.setFromEuler(s.tilt);
-        const hh = Math.max(g, 0.0001) * s.h;
-        m4.compose(v.set(s.x, -0.05, s.z), q, sc.set(s.w, hh, s.w));
+        const k = g > 0.01 ? 1 : 0;
+        m4.compose(v.set(s.x, 0, s.z), q, sc.set(s.w * k, g * s.h * k + 1e-4, s.w * k));
         spireMesh.setMatrixAt(i, m4);
       }
       spireMesh.instanceMatrix.needsUpdate = true;
