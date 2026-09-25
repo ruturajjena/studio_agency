@@ -3,6 +3,7 @@ export default {
   id: "08",
   name: "Field Lines",
   blurb: "A magnetic dipole traced in light, with particles streaming along its field loops. Your cursor swings the axis.",
+  theme: "aurora",
   camera: { fov: 38, position: [0, 0.6, 12], target: [0, -0.1, 0] },
   bloom: { strength: 0.85, radius: 0.55, threshold: 0.72 },
   exposure: 1.0,

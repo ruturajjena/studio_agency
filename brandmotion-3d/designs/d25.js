@@ -3,6 +3,7 @@ export default {
   id: "25",
   name: "Knot Current",
   blurb: "Energy races through a smoked-glass knot. The further your cursor strays, the faster it flows.",
+  theme: "sunset",
   camera: { fov: 34, position: [0, 0.3, 10], target: [0, 0.55, 0] },
   bloom: { strength: 0.9, radius: 0.4, threshold: 0.82 },
   exposure: 1.0,

@@ -3,6 +3,7 @@ export default {
   id: "03",
   name: "Particle Galaxy",
   blurb: "A spiral galaxy of twenty thousand stars. Your cursor acts as a gravity well that gathers and swirls them.",
+  theme: "neon",
   camera: { fov: 42, position: [0, 4.4, 7.6], target: [0, -0.35, 0] },
   bloom: { strength: 0.7, radius: 0.5, threshold: 0.7 },
   exposure: 1.0,

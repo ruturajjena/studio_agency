@@ -3,6 +3,7 @@ export default {
   id: "45",
   name: "Kaleido Tunnel",
   blurb: "A kaleidoscopic tunnel of mirrored crystal. Your cursor turns the prism and changes its symmetry.",
+  theme: "tropic",
   bloom: { strength: 0.55, radius: 0.5, threshold: 0.85 },
   exposure: 0.85,
 

@@ -45,7 +45,15 @@
       .hud .num { letter-spacing: 0.1em; }
       .hud h2 { font-weight: 500; font-size: clamp(26px, 4vw, 48px); letter-spacing: -0.03em; margin-top: 6px; }
       .hud p { color: var(--muted); max-width: 44ch; font-size: 14px; line-height: 1.5; margin-top: 6px; }
-      .hud nav { display: flex; gap: 8px; pointer-events: auto; }
+      .hud nav { display: flex; gap: 8px; justify-content: flex-end; }
+      .controls { display: grid; gap: 12px; justify-items: end; pointer-events: auto; max-width: 100%; }
+      .themes { display: flex; flex-wrap: wrap; gap: 7px; justify-content: flex-end; align-items: center; }
+      .themes .label { font-family: var(--mono); font-size: 12px; color: var(--muted); margin-right: 6px; min-width: 7ch; text-align: right; }
+      .sw { width: 24px; height: 24px; border-radius: 50%; border: 1px solid var(--line); background: var(--g); cursor: pointer; padding: 0; }
+      .sw:hover { transform: scale(1.12); }
+      .sw[aria-pressed="true"], .sw:focus-visible { outline: 2px solid var(--glow); outline-offset: 2px; }
+      .chip { margin-left: auto; display: inline-flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 11px; color: var(--muted); }
+      .chip i { width: 10px; height: 10px; border-radius: 50%; background: var(--g); display: inline-block; }
       .btn { font: inherit; font-size: 14px; color: var(--text); background: rgba(8, 16, 34, 0.55); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
              border: 1px solid var(--line); border-radius: 999px; padding: 10px 18px; cursor: pointer; text-decoration: none; }
       .btn:hover, .btn:focus-visible { border-color: var(--line-hi); outline: none; }
@@ -62,8 +70,8 @@
   <body>
     <header>
       <div class="brand">BRAND<span>MOTION</span></div>
-      <h1>50 hero studies, <b>one night sky.</b></h1>
-      <p class="lede">Interactive WebGL heroes in the BrandMotion palette: deep navy, luminous white-blue, a little cyan. Each one reacts to your cursor. Open any study to see it live, then use the arrow keys to move through the set.</p>
+      <h1>50 hero studies, <b>thirteen skies.</b></h1>
+      <p class="lede">Interactive WebGL heroes for BrandMotion. Each study ships with its own colour theme, from single-hue Ember and Lagoon to two-tone Neon and full-spectrum Prism. Open one to see it live, switch its colours with the swatches, and use the arrow keys to move through the set.</p>
     </header>
     <ul class="grid" id="grid"></ul>
 
@@ -71,26 +79,41 @@
       <canvas id="stage" aria-hidden="true"></canvas>
       <div class="hud">
         <div><span class="num" id="v-num"></span><h2 id="v-name"></h2><p id="v-blurb"></p></div>
-        <nav>
-          <a class="btn" href="#" id="v-all">All studies</a>
-          <button class="btn" type="button" id="v-prev" aria-label="Previous study">←</button>
-          <button class="btn" type="button" id="v-next" aria-label="Next study">→</button>
-        </nav>
+        <div class="controls">
+          <div class="themes" role="group" aria-label="Colour theme" id="v-themes"></div>
+          <nav>
+            <a class="btn" href="#" id="v-all">All studies</a>
+            <button class="btn" type="button" id="v-prev" aria-label="Previous study">←</button>
+            <button class="btn" type="button" id="v-next" aria-label="Next study">→</button>
+          </nav>
+        </div>
       </div>
     </section>
 
     <script type="module">
-      import { createStage } from "./stage.js";
+      import { createStage, THEMES } from "./stage.js";
       import MANIFEST from "./manifest.js";
 
       const TOTAL = MANIFEST.length;
       const pad = (n) => String(n).padStart(2, "0");
       const $ = (id) => document.getElementById(id);
+      // Swatch fill for a theme.
+      const swatch = (name) => {
+        const t = THEMES[name];
+        if (t.prism) return "conic-gradient(#ff6b9d, #ffb86b, #f5f36b, #6bffb8, #6bc8ff, #a78bff, #ff6b9d)";
+        const s = t.b ? [t.a[2], t.a[3], t.b[3], t.b[2]] : [t.a[1], t.a[2], t.a[3]];
+        return `linear-gradient(135deg, ${s.join(", ")})`;
+      };
+      const saved = {
+        get: (id) => { try { return localStorage.getItem(`bm-theme-${id}`); } catch { return null; } },
+        set: (id, v) => { try { localStorage.setItem(`bm-theme-${id}`, v); } catch {} },
+      };
 
       $("grid").innerHTML = MANIFEST.map((d) => `
         <li><a class="card" href="#${d.id}">
           <div class="thumb"><img src="./thumbs/d${d.id}.jpg" alt="" loading="lazy" width="640" height="400"></div>
-          <div class="row"><span class="num">${d.id}</span><span class="name">${d.name}</span></div>
+          <div class="row"><span class="num">${d.id}</span><span class="name">${d.name}</span>
+            <span class="chip"><i style="--g:${swatch(d.theme)}"></i>${THEMES[d.theme].label}</span></div>
           <p class="blurb">${d.blurb}</p>
         </a></li>`).join("");
 
@@ -109,10 +132,26 @@
         // Fresh canvas per study so each gets a clean WebGL context.
         const old = $("stage"), canvas = old.cloneNode();
         old.replaceWith(canvas);
-        handle = createStage(canvas, d, { reducedMotion: matchMedia("(prefers-reduced-motion: reduce)").matches });
+        const theme = THEMES[saved.get(d.id)] ? saved.get(d.id) : d.theme || "midnight";
+        handle = createStage(canvas, d, { theme, reducedMotion: matchMedia("(prefers-reduced-motion: reduce)").matches });
+        renderThemes(d, theme);
         $("v-num").textContent = `${pad(n)} / ${TOTAL}`;
         $("v-name").textContent = d.name;
         $("v-blurb").textContent = d.blurb;
+      }
+      function renderThemes(d, active) {
+        $("v-themes").innerHTML = `<span class="label" id="v-theme">${THEMES[active].label}</span>` +
+          Object.keys(THEMES).map((k) => `<button type="button" class="sw" data-theme="${k}" style="--g:${swatch(k)}"
+            aria-label="${THEMES[k].label}${k === d.theme ? " (default)" : ""}" title="${THEMES[k].label}${k === d.theme ? " · default" : ""}"
+            aria-pressed="${k === active}"></button>`).join("");
+        $("v-themes").onclick = (e) => {
+          const k = e.target.closest(".sw")?.dataset.theme;
+          if (!k || !handle) return;
+          handle.setTheme(k);
+          saved.set(d.id, k);
+          $("v-themes").querySelectorAll(".sw").forEach((b) => b.setAttribute("aria-pressed", b.dataset.theme === k));
+          $("v-theme").textContent = THEMES[k].label;
+        };
       }
       const go = (step) => {
         const n = parseInt(location.hash.slice(1)) || 1;

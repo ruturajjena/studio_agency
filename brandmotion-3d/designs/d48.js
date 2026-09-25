@@ -3,6 +3,7 @@ export default {
   id: "48",
   name: "Plasma Orb",
   blurb: "A glass plasma ball crackling with lightning. One tendril reaches for your cursor.",
+  theme: "violet",
   camera: { fov: 36, position: [0, 0.5, 8.2], target: [0, -0.05, 0] },
   bloom: { strength: 0.75, radius: 0.35, threshold: 0.75 },
   exposure: 1.0,

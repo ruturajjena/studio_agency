@@ -5,6 +5,7 @@ export default {
   id: "33",
   name: "Holo Globe",
   blurb: "A dotted holographic globe traced by flight arcs between glowing cities. Move to spin it.",
+  theme: "emerald",
   camera: { fov: 38, position: [0, 0.1, 7.4], target: [0, 0.25, 0] },
   bloom: { strength: 0.9, radius: 0.6, threshold: 0.7 },
   exposure: 1.0,

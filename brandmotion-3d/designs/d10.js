@@ -3,6 +3,7 @@ export default {
   id: "10",
   name: "Deep Jellyfish",
   blurb: "A bioluminescent jellyfish pulses through the deep, trailing threads of light. It slowly swims toward your cursor.",
+  theme: "neon",
   camera: { fov: 40, position: [0, 0, 10], target: [0, -0.3, 0] },
   bloom: { strength: 0.7, radius: 0.55, threshold: 0.75 },
   exposure: 1.0,

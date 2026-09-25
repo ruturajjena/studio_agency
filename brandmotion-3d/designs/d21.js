@@ -3,6 +3,7 @@ export default {
   id: "21",
   name: "Double Helix",
   blurb: "A glowing DNA double helix, turning slowly as data streams up its spine. Your cursor winds and tilts it.",
+  theme: "emerald",
   camera: { fov: 36, position: [0, 0.6, 12.5], target: [0, 0.7, 0] },
   bloom: { strength: 0.95, radius: 0.55, threshold: 0.7 },
   exposure: 1.0,

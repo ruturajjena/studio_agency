@@ -3,6 +3,7 @@ export default {
   id: "43",
   name: "Mandelbulb",
   blurb: "A living 3D fractal, morphing as it breathes. Move your cursor to orbit around it.",
+  theme: "rose",
   bloom: { strength: 0.85, radius: 0.6, threshold: 0.7 },
   exposure: 1.0,
 

@@ -3,6 +3,7 @@ export default {
   id: "50",
   name: "Glow Reef",
   blurb: "A bioluminescent reef of branching coral and drifting plankton. Coral near your cursor glows brighter.",
+  theme: "tropic",
   camera: { fov: 40, position: [0, 1.7, 7.6], target: [0, 0.95, 0] },
   bloom: { strength: 0.7, radius: 0.35, threshold: 0.8 },
   exposure: 1.0,

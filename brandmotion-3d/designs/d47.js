@@ -3,6 +3,7 @@ export default {
   id: "47",
   name: "Light Maze",
   blurb: "A beam of light solves a dark labyrinth, then a new one rises. Your cursor tilts the maze.",
+  theme: "emerald",
   camera: { fov: 39, position: [0, 15.5, 11], target: [0, -2.3, 0.6] },
   bloom: { strength: 1.0, radius: 0.5, threshold: 0.7 },
   exposure: 1.1,

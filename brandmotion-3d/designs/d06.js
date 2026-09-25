@@ -3,6 +3,7 @@ export default {
   id: "06",
   name: "Silk Ribbons",
   blurb: "Satin ribbons ripple and twist like fabric in the wind. Your cursor gathers them toward it.",
+  theme: "rose",
   camera: { fov: 38, position: [0, 0.2, 11], target: [0, -0.1, 0] },
   bloom: { strength: 0.6, radius: 0.55, threshold: 0.8 },
   exposure: 1.0,

@@ -7,6 +7,7 @@ export default {
   id: "17",
   name: "Origami Crane",
   blurb: "A paper crane of flat folds and glowing creases, gliding in moonlight. It turns to follow your cursor.",
+  theme: "midnight",
   camera: { fov: 35, position: [0, 2.2, 9], target: [0, 0.8, 0] },
   bloom: { strength: 0.75, radius: 0.5, threshold: 0.86 },
   exposure: 1.0,

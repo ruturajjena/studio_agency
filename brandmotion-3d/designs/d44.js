@@ -3,6 +3,7 @@ export default {
   id: "44",
   name: "Sky Lanterns",
   blurb: "Paper lanterns rise over dark water. Your cursor releases new ones and nudges them aside.",
+  theme: "gold",
   camera: { fov: 45, position: [0, 1.3, 10], target: [0, 2.7, 0] },
   bloom: { strength: 0.9, radius: 0.6, threshold: 0.7 },
   exposure: 1.0,

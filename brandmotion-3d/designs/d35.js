@@ -5,6 +5,7 @@ export default {
   id: "35",
   name: "Card Cascade",
   blurb: "A deck of glass portfolio cards cascading through a slow shuffle. Move the cursor to fan them out.",
+  theme: "sunset",
   camera: { fov: 36, position: [0, 0.4, 9.5], target: [0, 0.55, 0] },
   bloom: { strength: 0.55, radius: 0.6, threshold: 0.85 },
   exposure: 1.0,

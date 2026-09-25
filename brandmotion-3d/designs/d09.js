@@ -3,6 +3,7 @@ export default {
   id: "09",
   name: "Crystal Geode",
   blurb: "A cluster of quartz grows from black rock, glowing from within. Your cursor moves the light inside it.",
+  theme: "violet",
   camera: { fov: 36, position: [0, 1.5, 8.2], target: [0, 0.35, 0] },
   bloom: { strength: 0.7, radius: 0.55, threshold: 0.8 },
   exposure: 1.05,

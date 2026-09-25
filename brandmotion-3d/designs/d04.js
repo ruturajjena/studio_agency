@@ -3,6 +3,7 @@ export default {
   id: "04",
   name: "Glass Prism",
   blurb: "White light enters a glass prism and fans out into a cold spectrum. Your cursor steers the beam.",
+  theme: "prism",
   camera: { fov: 36, position: [1.4, 1.1, 10], target: [0.6, 0.15, 0] },
   bloom: { strength: 0.8, radius: 0.55, threshold: 0.8 },
   exposure: 1.0,

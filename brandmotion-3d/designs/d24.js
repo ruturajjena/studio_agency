@@ -5,6 +5,7 @@ export default {
   id: "24",
   name: "Möbius Band",
   blurb: "A lacquered Möbius strip where light runs its single endless surface. Your cursor turns it.",
+  theme: "neon",
   camera: { fov: 34, position: [0, 0.4, 9.5], target: [0, 0.55, 0] },
   bloom: { strength: 0.65, radius: 0.3, threshold: 0.9 },
   exposure: 1.05,

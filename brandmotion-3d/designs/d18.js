@@ -3,6 +3,7 @@ export default {
   id: "18",
   name: "Voxel Wave",
   blurb: "A field of cubes rides crossing waves, crests lit like glass. Your cursor adds a new wave source.",
+  theme: "aurora",
   camera: { fov: 32, position: [0, 9.5, 15.5], target: [0, -1.1, 0] },
   bloom: { strength: 0.85, radius: 0.5, threshold: 0.78 },
   exposure: 1.0,

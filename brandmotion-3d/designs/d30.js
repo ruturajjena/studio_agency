@@ -3,6 +3,7 @@ export default {
   id: "30",
   name: "Constellations",
   blurb: "A deep field of stars. Wherever you point, nearby stars reach for each other and draw a constellation.",
+  theme: "midnight",
   camera: { fov: 50, position: [0, 0, 10], target: [0, 0, 0] },
   bloom: { strength: 0.9, radius: 0.5, threshold: 0.7 },
   exposure: 1.0,

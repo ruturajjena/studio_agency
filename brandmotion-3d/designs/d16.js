@@ -3,6 +3,7 @@ export default {
   id: "16",
   name: "Neural Net",
   blurb: "A living network of neurons firing pulses along their synapses. Nodes near your cursor light up and cascade.",
+  theme: "tropic",
   camera: { fov: 40, position: [0, 0.5, 11], target: [0, 0.6, 0] },
   bloom: { strength: 0.9, radius: 0.5, threshold: 0.72 },
   exposure: 1.0,

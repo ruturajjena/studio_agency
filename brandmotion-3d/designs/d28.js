@@ -3,6 +3,7 @@ export default {
   id: "28",
   name: "Signal Flag",
   blurb: "A silk banner rippling in the night wind. Your cursor is a gust that billows the cloth.",
+  theme: "ember",
   camera: { fov: 40, position: [2.4, 1.3, 8.0], target: [0.2, 0.6, 0] },
   bloom: { strength: 0.7, radius: 0.45, threshold: 0.85 },
   exposure: 1.1,

@@ -3,6 +3,7 @@ export default {
   id: "26",
   name: "Night City",
   blurb: "A rain-streaked skyline gliding past in the dark. Your cursor steers the fly-over.",
+  theme: "tropic",
   camera: { fov: 48, position: [0, 15, 14], target: [0, 8, -60] },
   bloom: { strength: 0.75, radius: 0.45, threshold: 0.8 },
   exposure: 1.0,

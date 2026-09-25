@@ -3,6 +3,7 @@ export default {
   id: "40",
   name: "Droplet Pool",
   blurb: "Drops fall into a still black pool and spread rings of reflected light. Your cursor picks where they land.",
+  theme: "ocean",
   camera: { fov: 36, position: [0, 3.1, 7.4], target: [0, 0.35, -0.6] },
   bloom: { strength: 0.8, radius: 0.55, threshold: 0.8 },
   exposure: 1.0,

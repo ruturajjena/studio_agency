@@ -3,6 +3,7 @@ export default {
   id: "13",
   name: "Warp Tunnel",
   blurb: "A light-speed run through rings and streaks. Steer the tunnel's curve with your cursor.",
+  theme: "prism",
   camera: { fov: 68, position: [0, 0, 0], target: [0, 0, -1] },
   bloom: { strength: 0.9, radius: 0.55, threshold: 0.75 },
   exposure: 1.0,

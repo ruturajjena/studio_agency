@@ -5,6 +5,7 @@ export default {
   id: "49",
   name: "Twist Tower",
   blurb: "A breathing tower of glossy stacked plates. Move your cursor sideways to wind or unwind the twist.",
+  theme: "sunset",
   camera: { fov: 34, position: [0, 1.4, 11], target: [0, 0.45, 0] },
   bloom: { strength: 0.7, radius: 0.5, threshold: 0.85 },
   exposure: 1.05,

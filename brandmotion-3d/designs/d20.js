@@ -3,6 +3,7 @@ export default {
   id: "20",
   name: "Aurora Lake",
   blurb: "Curtains of aurora ripple above a still mountain lake that mirrors them. Your cursor pushes the light.",
+  theme: "aurora",
   bloom: { strength: 0.7, radius: 0.6, threshold: 0.75 },
   exposure: 1.0,
   background: "#020510",

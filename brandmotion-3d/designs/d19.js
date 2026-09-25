@@ -3,6 +3,7 @@ export default {
   id: "19",
   name: "Event Horizon",
   blurb: "A black hole wrapped in a lensed accretion disk of white-blue fire. Move to orbit the view.",
+  theme: "ember",
   bloom: { strength: 0.7, radius: 0.45, threshold: 0.85 },
   exposure: 1.0,
   background: "#010208",

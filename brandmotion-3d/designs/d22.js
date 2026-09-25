@@ -3,6 +3,7 @@ export default {
   id: "22",
   name: "Shattered Mirror",
   blurb: "A mirror full of night sky that fractures and heals. Shards scatter from your cursor.",
+  theme: "violet",
   camera: { fov: 35, position: [0, 0.5, 9.5], target: [0, 0.45, 0] },
   bloom: { strength: 0.75, radius: 0.55, threshold: 0.8 },
   exposure: 1.05,

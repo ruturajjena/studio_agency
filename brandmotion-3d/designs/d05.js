@@ -3,6 +3,7 @@ export default {
   id: "05",
   name: "Wireframe Ridges",
   blurb: "An endless night flight over glowing wireframe mountains beneath a full moon. Your cursor banks the camera.",
+  theme: "sunset",
   camera: { fov: 55, position: [0, 4.2, 10], target: [0, 2.6, -30] },
   bloom: { strength: 0.8, radius: 0.5, threshold: 0.72 },
   exposure: 1.0,

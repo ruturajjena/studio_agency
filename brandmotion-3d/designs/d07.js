@@ -3,6 +3,7 @@ export default {
   id: "07",
   name: "Pulse Grid",
   blurb: "A floor of hexagonal pillars. Waves of light and motion ripple outward from wherever your cursor rests.",
+  theme: "citrus",
   camera: { fov: 36, position: [0, 11, 12.5], target: [0, -0.6, -0.8] },
   bloom: { strength: 0.75, radius: 0.5, threshold: 0.78 },
   exposure: 1.0,

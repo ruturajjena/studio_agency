@@ -3,6 +3,7 @@ export default {
   id: "12",
   name: "Ferrofluid",
   blurb: "A bead of black magnetic liquid. Your cursor is the magnet — spikes rise wherever it points.",
+  theme: "ember",
   camera: { fov: 34, position: [0, 0.35, 8.2], target: [0, 0.35, 0] },
   bloom: { strength: 0.75, radius: 0.55, threshold: 0.8 },
   exposure: 1.05,

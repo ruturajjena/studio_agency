@@ -5,6 +5,7 @@ export default {
   id: "37",
   name: "Geodesic Lattice",
   blurb: "A geodesic sphere whose struts carry travelling pulses of light. Nodes near your cursor ignite.",
+  theme: "tropic",
   camera: { fov: 38, position: [0, 0.2, 8.2], target: [0, 0.35, 0] },
   bloom: { strength: 0.75, radius: 0.5, threshold: 0.72 },
   exposure: 1.0,

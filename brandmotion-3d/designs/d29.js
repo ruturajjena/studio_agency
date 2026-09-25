@@ -5,6 +5,7 @@ export default {
   id: "29",
   name: "Radial Spectrum",
   blurb: "A circular equaliser pumping to a silent beat on black glass. Bars rise to meet your cursor.",
+  theme: "prism",
   camera: { fov: 38, position: [0, 3.3, 11.5], target: [0, 0.05, 0] },
   bloom: { strength: 0.65, radius: 0.35, threshold: 0.85 },
   exposure: 1.0,

@@ -12,7 +12,7 @@ const files = fs.readdirSync(dir).filter((f) => /^d\d\d\.js$/.test(f)).sort();
 const list = [];
 for (const f of files) {
   const { default: d } = await import(pathToFileURL(path.join(dir, f)));
-  list.push({ id: d.id, name: d.name, blurb: d.blurb });
+  list.push({ id: d.id, name: d.name, blurb: d.blurb, theme: d.theme || "midnight" });
 }
 fs.writeFileSync(
   path.join(dir, "manifest.js"),

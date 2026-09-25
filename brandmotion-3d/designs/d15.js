@@ -3,6 +3,7 @@ export default {
   id: "15",
   name: "Liquid Metaballs",
   blurb: "Raymarched droplets of liquid chrome merge and split. One of them follows your cursor.",
+  theme: "rose",
   bloom: { strength: 0.7, radius: 0.5, threshold: 0.82 },
   exposure: 1.0,
 

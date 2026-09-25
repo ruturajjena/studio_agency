@@ -3,6 +3,7 @@ export default {
   id: "36",
   name: "Smoke Column",
   blurb: "A column of luminous smoke curls up from a glowing vent. The plume bends toward your cursor.",
+  theme: "violet",
   camera: { fov: 38, position: [0, 2.0, 10.5], target: [0, 1.2, 0] },
   bloom: { strength: 0.8, radius: 0.7, threshold: 0.75 },
   exposure: 1.0,

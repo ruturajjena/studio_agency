@@ -3,6 +3,7 @@ export default {
   id: "27",
   name: "Lighthouse",
   blurb: "A lighthouse sweeping its beam through sea fog. Point, and the light turns to find you.",
+  theme: "midnight",
   camera: { fov: 40, position: [0.6, 2.4, 17], target: [0.6, 2.9, 0] },
   bloom: { strength: 0.8, radius: 0.55, threshold: 0.82 },
   exposure: 1.0,

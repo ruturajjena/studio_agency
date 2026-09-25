@@ -3,6 +3,7 @@ export default {
   id: "23",
   name: "Pendulum Wave",
   blurb: "Eighteen glowing pendulums slipping in and out of phase. Move to swing the camera around them.",
+  theme: "citrus",
   camera: { fov: 36, position: [6, 3, 9], target: [0, 0.9, 0] },
   bloom: { strength: 0.7, radius: 0.35, threshold: 0.8 },
   exposure: 1.0,

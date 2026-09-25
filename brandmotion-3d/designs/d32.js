@@ -5,6 +5,7 @@ export default {
   id: "32",
   name: "Ice Spires",
   blurb: "Crystal spires burst through a frozen lake. Spires near your cursor kindle with frost light.",
+  theme: "ocean",
   camera: { fov: 38, position: [0, 1.6, 10.5], target: [0, 1.25, 0] },
   bloom: { strength: 0.6, radius: 0.5, threshold: 0.82 },
   exposure: 1.05,

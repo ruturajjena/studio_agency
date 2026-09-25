@@ -6,6 +6,7 @@ export default {
   id: "46",
   name: "Shape Shifter",
   blurb: "Fifteen thousand particles flowing between forms. Your cursor scatters the ones nearby.",
+  theme: "aurora",
   camera: { fov: 40, position: [0, 0, 9], target: [0, -0.35, 0] },
   bloom: { strength: 0.9, radius: 0.5, threshold: 0.55 },
   exposure: 1.0,

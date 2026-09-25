@@ -3,6 +3,7 @@ export default {
   id: "02",
   name: "Orbital Gyroscope",
   blurb: "Rings of light spin on independent axes around an obsidian core. Your cursor tilts the whole rig.",
+  theme: "ember",
   camera: { fov: 36, position: [0, 0.4, 10], target: [0, -0.15, 0] },
   bloom: { strength: 0.75, radius: 0.5, threshold: 0.8 },
   exposure: 1.0,

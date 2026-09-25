@@ -3,6 +3,7 @@ export default {
   id: "01",
   name: "Liquid Monolith",
   blurb: "A standing slab of liquid chrome. Ripples chase your cursor across its face.",
+  theme: "prism",
   camera: { fov: 35, position: [0, 0.6, 9], target: [0, 0.4, 0] },
   bloom: { strength: 0.6, radius: 0.6, threshold: 0.88 },
   exposure: 1.0,

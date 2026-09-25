@@ -3,6 +3,7 @@ export default {
   id: "14",
   name: "Floating Isles",
   blurb: "Faceted islands drift in a night void, pouring waterfalls of light. Move to shift the parallax.",
+  theme: "sunset",
   camera: { fov: 38, position: [0, 3.4, 13], target: [0, 0.7, 0] },
   bloom: { strength: 0.85, radius: 0.6, threshold: 0.7 },
   exposure: 1.05,

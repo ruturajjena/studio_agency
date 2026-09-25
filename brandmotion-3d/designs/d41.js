@@ -5,6 +5,7 @@ export default {
   id: "41",
   name: "Cube Cipher",
   blurb: "A cube of dark glass cubies solving itself layer by layer, light bleeding from its seams. Move to tilt it.",
+  theme: "citrus",
   camera: { fov: 35, position: [0, 0.2, 9.6], target: [0, 0.35, 0] },
   bloom: { strength: 0.85, radius: 0.55, threshold: 0.78 },
   exposure: 1.0,

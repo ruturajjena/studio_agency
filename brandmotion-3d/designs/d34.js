@@ -3,6 +3,7 @@ export default {
   id: "34",
   name: "Coil Springs",
   blurb: "Chrome coils pulse in a travelling rhythm on a black plinth. Hover to press down the nearest spring.",
+  theme: "gold",
   camera: { fov: 34, position: [0, 1.3, 10.5], target: [0, 0.0, 0] },
   bloom: { strength: 0.7, radius: 0.5, threshold: 0.85 },
   exposure: 1.05,

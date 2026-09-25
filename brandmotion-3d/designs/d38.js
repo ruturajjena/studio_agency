@@ -3,6 +3,7 @@ export default {
   id: "38",
   name: "Portal Arch",
   blurb: "A monolithic stone arch frames a swirling vortex of light. The vortex's eye drifts with your cursor.",
+  theme: "neon",
   camera: { fov: 38, position: [0, 0.8, 11.5], target: [0, 1.45, 0] },
   bloom: { strength: 0.85, radius: 0.6, threshold: 0.72 },
   exposure: 1.0,

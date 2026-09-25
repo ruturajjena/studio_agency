@@ -3,6 +3,7 @@ export default {
   id: "11",
   name: "Tesseract",
   blurb: "A hypercube rotating through the fourth dimension, projected into ours. Your cursor sets the speed and plane of its turn.",
+  theme: "ocean",
   camera: { fov: 36, position: [0, 0.5, 9.5], target: [0, 0.05, 0] },
   bloom: { strength: 0.65, radius: 0.45, threshold: 0.8 },
   exposure: 1.0,

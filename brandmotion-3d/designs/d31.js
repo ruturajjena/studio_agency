@@ -3,6 +3,7 @@ export default {
   id: "31",
   name: "Iridescent Bubbles",
   blurb: "Blue-violet soap bubbles drifting in the dark. Sweep your cursor to blow them away.",
+  theme: "neon",
   camera: { fov: 40, position: [0, 0.4, 10], target: [0, 0.6, 0] },
   bloom: { strength: 0.7, radius: 0.5, threshold: 0.8 },
   exposure: 1.05,

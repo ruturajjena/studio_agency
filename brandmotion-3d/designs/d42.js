@@ -3,6 +3,7 @@ export default {
   id: "42",
   name: "Fiber Bloom",
   blurb: "Thousands of fibre-optic strands with glowing tips. Your cursor blows through them like wind.",
+  theme: "prism",
   camera: { fov: 38, position: [0, 0.9, 8.6], target: [0, 0.05, 0] },
   bloom: { strength: 0.9, radius: 0.5, threshold: 0.75 },
   exposure: 1.0,

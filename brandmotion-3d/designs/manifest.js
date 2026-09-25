@@ -3,251 +3,301 @@ export default [
   {
     "id": "01",
     "name": "Liquid Monolith",
-    "blurb": "A standing slab of liquid chrome. Ripples chase your cursor across its face."
+    "blurb": "A standing slab of liquid chrome. Ripples chase your cursor across its face.",
+    "theme": "prism"
   },
   {
     "id": "02",
     "name": "Orbital Gyroscope",
-    "blurb": "Rings of light spin on independent axes around an obsidian core. Your cursor tilts the whole rig."
+    "blurb": "Rings of light spin on independent axes around an obsidian core. Your cursor tilts the whole rig.",
+    "theme": "ember"
   },
   {
     "id": "03",
     "name": "Particle Galaxy",
-    "blurb": "A spiral galaxy of twenty thousand stars. Your cursor acts as a gravity well that gathers and swirls them."
+    "blurb": "A spiral galaxy of twenty thousand stars. Your cursor acts as a gravity well that gathers and swirls them.",
+    "theme": "neon"
   },
   {
     "id": "04",
     "name": "Glass Prism",
-    "blurb": "White light enters a glass prism and fans out into a cold spectrum. Your cursor steers the beam."
+    "blurb": "White light enters a glass prism and fans out into a cold spectrum. Your cursor steers the beam.",
+    "theme": "prism"
   },
   {
     "id": "05",
     "name": "Wireframe Ridges",
-    "blurb": "An endless night flight over glowing wireframe mountains beneath a full moon. Your cursor banks the camera."
+    "blurb": "An endless night flight over glowing wireframe mountains beneath a full moon. Your cursor banks the camera.",
+    "theme": "sunset"
   },
   {
     "id": "06",
     "name": "Silk Ribbons",
-    "blurb": "Satin ribbons ripple and twist like fabric in the wind. Your cursor gathers them toward it."
+    "blurb": "Satin ribbons ripple and twist like fabric in the wind. Your cursor gathers them toward it.",
+    "theme": "rose"
   },
   {
     "id": "07",
     "name": "Pulse Grid",
-    "blurb": "A floor of hexagonal pillars. Waves of light and motion ripple outward from wherever your cursor rests."
+    "blurb": "A floor of hexagonal pillars. Waves of light and motion ripple outward from wherever your cursor rests.",
+    "theme": "citrus"
   },
   {
     "id": "08",
     "name": "Field Lines",
-    "blurb": "A magnetic dipole traced in light, with particles streaming along its field loops. Your cursor swings the axis."
+    "blurb": "A magnetic dipole traced in light, with particles streaming along its field loops. Your cursor swings the axis.",
+    "theme": "aurora"
   },
   {
     "id": "09",
     "name": "Crystal Geode",
-    "blurb": "A cluster of quartz grows from black rock, glowing from within. Your cursor moves the light inside it."
+    "blurb": "A cluster of quartz grows from black rock, glowing from within. Your cursor moves the light inside it.",
+    "theme": "violet"
   },
   {
     "id": "10",
     "name": "Deep Jellyfish",
-    "blurb": "A bioluminescent jellyfish pulses through the deep, trailing threads of light. It slowly swims toward your cursor."
+    "blurb": "A bioluminescent jellyfish pulses through the deep, trailing threads of light. It slowly swims toward your cursor.",
+    "theme": "neon"
   },
   {
     "id": "11",
     "name": "Tesseract",
-    "blurb": "A hypercube rotating through the fourth dimension, projected into ours. Your cursor sets the speed and plane of its turn."
+    "blurb": "A hypercube rotating through the fourth dimension, projected into ours. Your cursor sets the speed and plane of its turn.",
+    "theme": "ocean"
   },
   {
     "id": "12",
     "name": "Ferrofluid",
-    "blurb": "A bead of black magnetic liquid. Your cursor is the magnet — spikes rise wherever it points."
+    "blurb": "A bead of black magnetic liquid. Your cursor is the magnet — spikes rise wherever it points.",
+    "theme": "ember"
   },
   {
     "id": "13",
     "name": "Warp Tunnel",
-    "blurb": "A light-speed run through rings and streaks. Steer the tunnel's curve with your cursor."
+    "blurb": "A light-speed run through rings and streaks. Steer the tunnel's curve with your cursor.",
+    "theme": "prism"
   },
   {
     "id": "14",
     "name": "Floating Isles",
-    "blurb": "Faceted islands drift in a night void, pouring waterfalls of light. Move to shift the parallax."
+    "blurb": "Faceted islands drift in a night void, pouring waterfalls of light. Move to shift the parallax.",
+    "theme": "sunset"
   },
   {
     "id": "15",
     "name": "Liquid Metaballs",
-    "blurb": "Raymarched droplets of liquid chrome merge and split. One of them follows your cursor."
+    "blurb": "Raymarched droplets of liquid chrome merge and split. One of them follows your cursor.",
+    "theme": "rose"
   },
   {
     "id": "16",
     "name": "Neural Net",
-    "blurb": "A living network of neurons firing pulses along their synapses. Nodes near your cursor light up and cascade."
+    "blurb": "A living network of neurons firing pulses along their synapses. Nodes near your cursor light up and cascade.",
+    "theme": "tropic"
   },
   {
     "id": "17",
     "name": "Origami Crane",
-    "blurb": "A paper crane of flat folds and glowing creases, gliding in moonlight. It turns to follow your cursor."
+    "blurb": "A paper crane of flat folds and glowing creases, gliding in moonlight. It turns to follow your cursor.",
+    "theme": "midnight"
   },
   {
     "id": "18",
     "name": "Voxel Wave",
-    "blurb": "A field of cubes rides crossing waves, crests lit like glass. Your cursor adds a new wave source."
+    "blurb": "A field of cubes rides crossing waves, crests lit like glass. Your cursor adds a new wave source.",
+    "theme": "aurora"
   },
   {
     "id": "19",
     "name": "Event Horizon",
-    "blurb": "A black hole wrapped in a lensed accretion disk of white-blue fire. Move to orbit the view."
+    "blurb": "A black hole wrapped in a lensed accretion disk of white-blue fire. Move to orbit the view.",
+    "theme": "ember"
   },
   {
     "id": "20",
     "name": "Aurora Lake",
-    "blurb": "Curtains of aurora ripple above a still mountain lake that mirrors them. Your cursor pushes the light."
+    "blurb": "Curtains of aurora ripple above a still mountain lake that mirrors them. Your cursor pushes the light.",
+    "theme": "aurora"
   },
   {
     "id": "21",
     "name": "Double Helix",
-    "blurb": "A glowing DNA double helix, turning slowly as data streams up its spine. Your cursor winds and tilts it."
+    "blurb": "A glowing DNA double helix, turning slowly as data streams up its spine. Your cursor winds and tilts it.",
+    "theme": "emerald"
   },
   {
     "id": "22",
     "name": "Shattered Mirror",
-    "blurb": "A mirror full of night sky that fractures and heals. Shards scatter from your cursor."
+    "blurb": "A mirror full of night sky that fractures and heals. Shards scatter from your cursor.",
+    "theme": "violet"
   },
   {
     "id": "23",
     "name": "Pendulum Wave",
-    "blurb": "Eighteen glowing pendulums slipping in and out of phase. Move to swing the camera around them."
+    "blurb": "Eighteen glowing pendulums slipping in and out of phase. Move to swing the camera around them.",
+    "theme": "citrus"
   },
   {
     "id": "24",
     "name": "Möbius Band",
-    "blurb": "A lacquered Möbius strip where light runs its single endless surface. Your cursor turns it."
+    "blurb": "A lacquered Möbius strip where light runs its single endless surface. Your cursor turns it.",
+    "theme": "neon"
   },
   {
     "id": "25",
     "name": "Knot Current",
-    "blurb": "Energy races through a smoked-glass knot. The further your cursor strays, the faster it flows."
+    "blurb": "Energy races through a smoked-glass knot. The further your cursor strays, the faster it flows.",
+    "theme": "sunset"
   },
   {
     "id": "26",
     "name": "Night City",
-    "blurb": "A rain-streaked skyline gliding past in the dark. Your cursor steers the fly-over."
+    "blurb": "A rain-streaked skyline gliding past in the dark. Your cursor steers the fly-over.",
+    "theme": "tropic"
   },
   {
     "id": "27",
     "name": "Lighthouse",
-    "blurb": "A lighthouse sweeping its beam through sea fog. Point, and the light turns to find you."
+    "blurb": "A lighthouse sweeping its beam through sea fog. Point, and the light turns to find you.",
+    "theme": "midnight"
   },
   {
     "id": "28",
     "name": "Signal Flag",
-    "blurb": "A silk banner rippling in the night wind. Your cursor is a gust that billows the cloth."
+    "blurb": "A silk banner rippling in the night wind. Your cursor is a gust that billows the cloth.",
+    "theme": "ember"
   },
   {
     "id": "29",
     "name": "Radial Spectrum",
-    "blurb": "A circular equaliser pumping to a silent beat on black glass. Bars rise to meet your cursor."
+    "blurb": "A circular equaliser pumping to a silent beat on black glass. Bars rise to meet your cursor.",
+    "theme": "prism"
   },
   {
     "id": "30",
     "name": "Constellations",
-    "blurb": "A deep field of stars. Wherever you point, nearby stars reach for each other and draw a constellation."
+    "blurb": "A deep field of stars. Wherever you point, nearby stars reach for each other and draw a constellation.",
+    "theme": "midnight"
   },
   {
     "id": "31",
     "name": "Iridescent Bubbles",
-    "blurb": "Blue-violet soap bubbles drifting in the dark. Sweep your cursor to blow them away."
+    "blurb": "Blue-violet soap bubbles drifting in the dark. Sweep your cursor to blow them away.",
+    "theme": "neon"
   },
   {
     "id": "32",
     "name": "Ice Spires",
-    "blurb": "Crystal spires burst through a frozen lake. Spires near your cursor kindle with frost light."
+    "blurb": "Crystal spires burst through a frozen lake. Spires near your cursor kindle with frost light.",
+    "theme": "ocean"
   },
   {
     "id": "33",
     "name": "Holo Globe",
-    "blurb": "A dotted holographic globe traced by flight arcs between glowing cities. Move to spin it."
+    "blurb": "A dotted holographic globe traced by flight arcs between glowing cities. Move to spin it.",
+    "theme": "emerald"
   },
   {
     "id": "34",
     "name": "Coil Springs",
-    "blurb": "Chrome coils pulse in a travelling rhythm on a black plinth. Hover to press down the nearest spring."
+    "blurb": "Chrome coils pulse in a travelling rhythm on a black plinth. Hover to press down the nearest spring.",
+    "theme": "gold"
   },
   {
     "id": "35",
     "name": "Card Cascade",
-    "blurb": "A deck of glass portfolio cards cascading through a slow shuffle. Move the cursor to fan them out."
+    "blurb": "A deck of glass portfolio cards cascading through a slow shuffle. Move the cursor to fan them out.",
+    "theme": "sunset"
   },
   {
     "id": "36",
     "name": "Smoke Column",
-    "blurb": "A column of luminous smoke curls up from a glowing vent. The plume bends toward your cursor."
+    "blurb": "A column of luminous smoke curls up from a glowing vent. The plume bends toward your cursor.",
+    "theme": "violet"
   },
   {
     "id": "37",
     "name": "Geodesic Lattice",
-    "blurb": "A geodesic sphere whose struts carry travelling pulses of light. Nodes near your cursor ignite."
+    "blurb": "A geodesic sphere whose struts carry travelling pulses of light. Nodes near your cursor ignite.",
+    "theme": "tropic"
   },
   {
     "id": "38",
     "name": "Portal Arch",
-    "blurb": "A monolithic stone arch frames a swirling vortex of light. The vortex's eye drifts with your cursor."
+    "blurb": "A monolithic stone arch frames a swirling vortex of light. The vortex's eye drifts with your cursor.",
+    "theme": "neon"
   },
   {
     "id": "39",
     "name": "Ringed World",
-    "blurb": "A banded giant wrapped in thin particle rings, moons in slow orbit. Move to orbit the camera around it."
+    "blurb": "A banded giant wrapped in thin particle rings, moons in slow orbit. Move to orbit the camera around it.",
+    "theme": "gold"
   },
   {
     "id": "40",
     "name": "Droplet Pool",
-    "blurb": "Drops fall into a still black pool and spread rings of reflected light. Your cursor picks where they land."
+    "blurb": "Drops fall into a still black pool and spread rings of reflected light. Your cursor picks where they land.",
+    "theme": "ocean"
   },
   {
     "id": "41",
     "name": "Cube Cipher",
-    "blurb": "A cube of dark glass cubies solving itself layer by layer, light bleeding from its seams. Move to tilt it."
+    "blurb": "A cube of dark glass cubies solving itself layer by layer, light bleeding from its seams. Move to tilt it.",
+    "theme": "citrus"
   },
   {
     "id": "42",
     "name": "Fiber Bloom",
-    "blurb": "Thousands of fibre-optic strands with glowing tips. Your cursor blows through them like wind."
+    "blurb": "Thousands of fibre-optic strands with glowing tips. Your cursor blows through them like wind.",
+    "theme": "prism"
   },
   {
     "id": "43",
     "name": "Mandelbulb",
-    "blurb": "A living 3D fractal, morphing as it breathes. Move your cursor to orbit around it."
+    "blurb": "A living 3D fractal, morphing as it breathes. Move your cursor to orbit around it.",
+    "theme": "rose"
   },
   {
     "id": "44",
     "name": "Sky Lanterns",
-    "blurb": "Paper lanterns rise over dark water. Your cursor releases new ones and nudges them aside."
+    "blurb": "Paper lanterns rise over dark water. Your cursor releases new ones and nudges them aside.",
+    "theme": "gold"
   },
   {
     "id": "45",
     "name": "Kaleido Tunnel",
-    "blurb": "A kaleidoscopic tunnel of mirrored crystal. Your cursor turns the prism and changes its symmetry."
+    "blurb": "A kaleidoscopic tunnel of mirrored crystal. Your cursor turns the prism and changes its symmetry.",
+    "theme": "tropic"
   },
   {
     "id": "46",
     "name": "Shape Shifter",
-    "blurb": "Fifteen thousand particles flowing between forms. Your cursor scatters the ones nearby."
+    "blurb": "Fifteen thousand particles flowing between forms. Your cursor scatters the ones nearby.",
+    "theme": "aurora"
   },
   {
     "id": "47",
     "name": "Light Maze",
-    "blurb": "A beam of light solves a dark labyrinth, then a new one rises. Your cursor tilts the maze."
+    "blurb": "A beam of light solves a dark labyrinth, then a new one rises. Your cursor tilts the maze.",
+    "theme": "emerald"
   },
   {
     "id": "48",
     "name": "Plasma Orb",
-    "blurb": "A glass plasma ball crackling with lightning. One tendril reaches for your cursor."
+    "blurb": "A glass plasma ball crackling with lightning. One tendril reaches for your cursor.",
+    "theme": "violet"
   },
   {
     "id": "49",
     "name": "Twist Tower",
-    "blurb": "A breathing tower of glossy stacked plates. Move your cursor sideways to wind or unwind the twist."
+    "blurb": "A breathing tower of glossy stacked plates. Move your cursor sideways to wind or unwind the twist.",
+    "theme": "sunset"
   },
   {
     "id": "50",
     "name": "Glow Reef",
-    "blurb": "A bioluminescent reef of branching coral and drifting plankton. Coral near your cursor glows brighter."
+    "blurb": "A bioluminescent reef of branching coral and drifting plankton. Coral near your cursor glows brighter.",
+    "theme": "tropic"
   }
 ];

@@ -3,6 +3,7 @@ export default {
   id: "39",
   name: "Ringed World",
   blurb: "A banded giant wrapped in thin particle rings, moons in slow orbit. Move to orbit the camera around it.",
+  theme: "gold",
   camera: { fov: 36, position: [0, 2, 11], target: [0, 0.35, 0] },
   bloom: { strength: 0.75, radius: 0.6, threshold: 0.78 },
   exposure: 1.05,
